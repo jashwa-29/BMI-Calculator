@@ -118,9 +118,9 @@ body{
 }
 
 #input-valid {
-  font-size: 12px;
+  font-size: 10px;
   font-family: "Poppins", sans-serif;
-  font-weight: 600;
+  font-weight: 700;
   color: red;
  
 }
