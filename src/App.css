@@ -1,0 +1,132 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+body{ 
+  width: 100vw;
+  height: 100vh;
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-bmi{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  gap: 50px;
+   width: auto;
+   padding: 50px 100px;
+   height: auto;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+
+}
+.main-img img{
+  width: 350px;
+  position: relative;
+  right: 30px;
+}
+.bmi-content{
+  display: flex;
+  align-items: left;
+  gap: 20px;
+  justify-content: center;
+  flex-direction: column;
+}
+.bmi-content h1{
+  font-family: "Rubik", sans-serif;
+  color: #3498db;
+  font-size: 40px;
+  font-weight: 500;
+}
+.height, .weight{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 5px;
+}
+.height label, .weight label{
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  color: #888;
+  font-weight: 500;
+}
+.height input, .weight input{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.button-div{
+  display: flex;
+  align-items: center;
+  gap: 10px ;
+  
+}
+.button-div button{
+  padding: 8px 25px;
+  background-color: #3498db;
+  cursor: pointer;
+  border: 1px solid #3498db;
+  border-radius: 5px;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  transition: 1s;
+}
+.button-div button:hover{
+  background-color: white;
+  border: 1px solid;
+}
+.clear-button{
+  display: none;
+}
+.main-input{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.bmi-answer{
+  border: 1px solid #3498db;
+ width: 102%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 10px;
+  padding:10px 0px 10px 10px ;
+  border-radius: 6px;
+  /* display: none; */
+}
+.bmi-answer h3{
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #555;
+}
+.bmi-answer h3:first-child{
+  color: #3498db;
+  font-weight: 600;
+}
+
+#input-valid {
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: red;
+ 
+}
+
+@media screen and (max-width:500px) {
+  .main-bmi{
+    flex-direction: column;
+  }
+}
