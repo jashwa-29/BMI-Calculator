@@ -8,7 +8,7 @@
 body{ 
   width: 100vw;
   height: 100vh;
-  background-color: gray;
+  /* background-color: gray; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,7 +23,11 @@ body{
    padding: 50px 100px;
    height: auto;
   border: none;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  /* box-shadow: inset 5px 5px 12px #ffff ,
+  5px 5px 12px rgba(0,0,0,.16); */
+
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 8px;
 
 }
@@ -63,8 +67,12 @@ background: linear-gradient(90deg, rgba(55,132,203,1) 36%, rgba(22,197,232,1) 90
 }
 .height input, .weight input{
   width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
+  padding: 15px;
+  border: 1px solid lightgray;
+  background-color: #ffff;
+  box-shadow: inset -5px -5px 12px white ,
+              inset 5px 5px 12px rgba(0,0,0,.16) ;
+  /* border: none; */
   border-radius: 5px;
 }
 
